@@ -31,15 +31,18 @@ There is no depency or extra library involved.
 
 Fisher - yates algorithm
 --------------------------
+```
 for(let i=arr.length-1;i>0;i--){
   const j = Math.round(Math.random()*(i+1));
   const temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp
 }
+```
 
 Elo rating algorithm
 ----------------------
+```
 const calculateRating = (winner)=>{
     var pa = probability(p2Rating,p1Rating);
     var pb = probability(p1Rating,p2Rating);
@@ -57,5 +60,5 @@ const calculateRating = (winner)=>{
       p2Rating = r2;
     }
   }
-  
+ ```
 
